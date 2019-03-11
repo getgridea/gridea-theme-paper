@@ -1,6 +1,5 @@
 <%
-  // 模拟数据
-  var posts =
+var posts =
    [ { content:
         '<p>作为一个技术人，你是否喜欢创作，或是怀念过往又或是畅想未来，或是总结技术又或是记录生活？</p>\n<!-- more -->\n<p>诚然，现在有很多平台或技术社区，里面有很多人每天都在分享，或是读书笔记又或是项目实践，或是面试经历又或是年终总结。</p>\n<p>技术社区或平台固然很热闹，但是有一些东西，又想记录在某个地方，只给有缘人。所以这正是个人博客存在的原因之一吧。你可以在自己的博客中记录各种各样的内容，电影影评、旅行日记、编程踩坑经历等等。</p>\n<p>基于此，你可能使用过或正在使用一些流行的工具如 <strong>Hexo</strong>、<strong>Jekyll</strong> 等静态博客网站生成器，又或者是 <strong>Gatsby</strong> 这种新型的 Web 构建工具。不过，你可能在寻找或者期待这样一种工具，可以更便捷地来管理博客和更舒适的编辑内容，于是今天的主角—— <strong>Hve Notes</strong> 诞生了！</p>\n<p>下面奉上介绍给各位喜欢创作的朋友</p>\n<p>👏  欢迎使用 <strong>Hve Notes</strong> ！  </p>\n<p>Github: <a href="https://github.com/hve-notes/hve-notes">Hve Notes</a><br>项目主页: <a href="http://hvenotes.fehey.com/">Hve Notes</a><br>示例网站: <a href="http://fehey.com/">示例网站一</a> <a href="http://hve-notes.github.io">示例网站二</a>  </p>\n<p>✍️  <strong>Hve Notes</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ... </p>\n<h2 id="-">特性👇</h2>\n<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作  </p>\n<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片  </p>\n<p>🏷️  你可以对文章进行标签分组  </p>\n<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单  </p>\n<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端  </p>\n<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台  </p>\n<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统  </p>\n<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong>  </p>\n<p>🌁  你可以任意使用应用内默认主题或任意第三方主题  </p>\n<p>🌱 当然 <strong>Hve Notes</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>\n<p>未来，它一定会成为你离不开的伙伴</p>\n<p>尽情发挥你的才华吧！</p>\n<p>😘 Enjoy~</p>\n<p>目前，<strong>Hve Notes</strong> 已经更新到了 v0.7.0 版本，基本已经可以满足日常使用。当然还有很大的成长空间，例如文章和标签的 <code>slug</code> 格式定制和可编辑，个性化的页面增加与配置，赋予用户更强的扩展能力，更丰富的主题等等。</p>\n<p>在此，也欢迎感兴趣的朋友可以加入我们，提出建议或共同开发，也欢迎加入我们的 <a href="https://t.me/joinchat/IDY0ahRqb8NPodv95BNpBg">Telegram 群组</a></p>\n<p>如果您觉得此项目还不错，欢迎 <a href="https://github.com/hve-notes/hve-notes">Star</a> 支持作者，也欢迎体验之后提出您最宝贵的建议到 <a href="https://github.com/hve-notes/hve-notes/issues">Issue</a></p>\n',
        fileName: 'yu-jian-chuang-zuo-yu-jian-hve-notes',
@@ -76,62 +75,25 @@
        link:
         '/Users/haoeryou/Documents/hve-notes/output/post/hello-hve/index.html',
        hideInList: false } ]
-  var pagination = { prev: '', next: '' }
-  var themeConfig =
-   { archivesPageSize: 50,
-     dateFormat: 'YYYY-MM-DD',
-     footerInfo:
-      'Powered by <a href="https://github.com/hve-notes/hve-notes" target="_blank" style="color: #1067de;">Hve Notes</a>',
-     postPageSize: 10,
-     postUrlFormat: 'SLUG',
-     showFeatureImage: true,
-     siteDescription: '温故而知新',
-     siteName: 'Hve Notes',
-     tagUrlFormat: 'SHORT_ID',
-     themeName: 'notes',
-     domain: '/Users/haoeryou/Documents/hve-notes/output' }
-  var site = {
-    posts: [],
-    tags: [
-      { name: '年终总结',
-        used: true,
-        slug: 'nian-zhong-zong-jie',
-        link: '/Users/haoeryou/Documents/hve-notes/output/tag/nian-zhong-zong-jie/index.html'
-      },
-      { name: 'Gridea',
-        used: true,
-        slug: 'nian-zhong-zong-jie',
-        link: '/Users/haoeryou/Documents/hve-notes/output/tag/nian-zhong-zong-jie/index.html'
-      },
-      { name: '测试',
-        used: true,
-        slug: 'nian-zhong-zong-jie',
-        link: '/Users/haoeryou/Documents/hve-notes/output/tag/nian-zhong-zong-jie/index.html'
-      },
-    ],
-    utils: {},
-  }
 %>
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <%- include('./_blocks/head') %>
-  </head>
-  <body>
-    <%- include('./_blocks/header') %>
-
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <%- include('./_blocks/post-list') %>
-        </div>
-        
-        <%- include('./_blocks/pagination') %>
-      </div>
-      
-      <%- include('./_blocks/sidebar') %>
+<% posts.forEach(function(post) { %>
+  <article class="article">
+    <h2 class="article-title">
+      <a href="<%= post.link %>"><%= post.title %></a>
+    </h2>
+    <p class="article-meta">
+      <%= post.dateFormat %>
+      <% post.tags.forEach(function(tag, tagIndex) { %>
+        <a href="<%= tag.link %>" class="badge <%= ['', 'secondary', 'success', 'warning', 'secondary'][Math.floor(Math.random()*5)] %>">
+          <%= tag.name %>
+        </a>
+      <% }); %>
+    </p>
+    <p class="text-lead">
+      <%- post.abstract %>
+    </p>
+    <div class="row">
+      <button>Read More</button>
     </div>
-    <%- include('./_blocks/scripts') %>
-  </body>
-</html>
+  </article>
+<% }); %>
