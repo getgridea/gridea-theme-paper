@@ -1,4 +1,4 @@
-# Gridea 主题 Notes
+# Gridea 主题 Paper
 
 一款简洁的 Gridea 主题，聚焦内容
 
