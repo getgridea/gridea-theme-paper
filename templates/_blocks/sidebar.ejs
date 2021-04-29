@@ -19,7 +19,7 @@
     <div class="row">
       <ul>
         <% site.posts.forEach(function(post, index) { %>
-          <% if (index < 10) { %>
+          <% if (index < 10 && !post.hideInList) { %>
             <li>
               <a href="<%= post.link %>"><%= post.title %></a>
             </li>
